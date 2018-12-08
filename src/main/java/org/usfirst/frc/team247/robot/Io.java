@@ -14,7 +14,11 @@ import edu.wpi.first.wpilibj.SPI;
 
 
 public class Io {       
-    Joystick drivePs2 = new Joystick(8);
+
+
+    public static final int  JOYSTICKPS2PORT=8;
+
+    Joystick drivePs2 = new Joystick(JOYSTICKPS2PORT);
     Joystick tankLeft = new Joystick(1);
     Joystick tankRight = new Joystick(2);
     Joystick manipPs2 = new Joystick(0);
