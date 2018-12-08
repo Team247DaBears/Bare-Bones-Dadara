@@ -21,7 +21,7 @@ public class Robot extends TimedRobot {
 
 	
 	@Override
-	public void robotInit() {
+	public void robotInit() {System.out.println("Hello Robot.");
 		io = new Io();
 
 		drive = new Drive(io);

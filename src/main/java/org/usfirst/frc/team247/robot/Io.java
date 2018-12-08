@@ -17,11 +17,14 @@ public class Io {
 
 
     public static final int  JOYSTICKPS2PORT=8;
+    public static final int  JOYSTICKTANKLEFT=1;
+    public static final int JOYSTICKTANKRIGHT=2;
+    public static final int JOYSTICKMANIP=0;
 
     Joystick drivePs2 = new Joystick(JOYSTICKPS2PORT);
-    Joystick tankLeft = new Joystick(1);
-    Joystick tankRight = new Joystick(2);
-    Joystick manipPs2 = new Joystick(0);
+    Joystick tankLeft = new Joystick(JOYSTICKTANKLEFT);
+    Joystick tankRight = new Joystick(JOYSTICKTANKRIGHT);
+    Joystick manipPs2 = new Joystick(JOYSTICKMANIP);
 
     public Talon leftDrive1 = new Talon(0);
     public Talon leftDrive2 = new Talon(1);
